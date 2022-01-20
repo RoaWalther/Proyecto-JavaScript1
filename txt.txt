@@ -1,7 +1,7 @@
 
 
 {	
-	"name": "Pedro",
+	"name": "Walther",
 	"job": "programador",
 	"edad": 32,
     "id": "371",

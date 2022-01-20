@@ -27,16 +27,31 @@ axios.post("https://reqres.in/api/users", {
 // 	document.body.appendChild(div);
 // }
 
-const getNombre = async ()=> {
-	let peticion = await fetch("txt.txt");
-	let res = await peticion.json();
-	let inp= document.createElement("DIV");
-	inp.classList.add("nombre");
-	inp.innerHTML=  res.name;
-	document.body.appendChild(inp);
-}
+document.getElementById("nombre").addEventListener("click", ()=>{
+	const getNombre = async ()=>{
+		let peticion = await fetch("txt.txt");
+		let res = await peticion.json();
+		let div = document.createAttribute("DIV");
+		div.classList.add("nombre");
+		div.innerHTML = res.name;
+		document.body.appendChild(div);
+	}
+	getNombre();
+});
 
-document.getElementById("nombre").addEventListener("click", getNombre);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const getEdad = async ()=> {
 	let peticion = await fetch("txt.txt");
