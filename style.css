@@ -11,7 +11,7 @@ div {
 	text-align: center;
 }
 
-#nombre, #edad{
+#nombre, #job{
 	width: 40%;
 	font-size: 20px;
 	color: #fff;
@@ -20,11 +20,11 @@ div {
 	padding: 10px;
 }
 
-#nombre:hover, #edad:hover {
+#nombre:hover, #job:hover {
 	background: #444;
 }
 
-.nombre, .edad {
+.nombre, .job {
 	width: 40%;
 	background: black;
 	color: white;
@@ -37,6 +37,6 @@ div {
 	color: red;
 }
 
-.edad {
+.job {
 	color: blue;
 }

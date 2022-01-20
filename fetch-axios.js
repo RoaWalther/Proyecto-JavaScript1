@@ -5,64 +5,33 @@
 axios("txt.txt")
 	.then(res=>console.log(res.data))
 
-
 //metodo post con libreria axio
 axios.post("https://reqres.in/api/users", {
 	"nombre": "Walther",
 	"apellido": "Roa"
-})
-	.then(res=>console.log(res.data));
+}).then(res=>console.log(res.data));
 
-
-
-	//fetch y axio con await y async
-//Primero ejecutamos con fetch()
-
-// const getNombre = async ()=> {
-// 	let peticion = await fetch("txt.txt");
-// 	let res = await peticion.json();
-// 	let div = document.createElement("DIV");
-// 	div.classList.add("nombre");
-// 	div.innerHTML = res.name;
-// 	document.body.appendChild(div);
-// }
-
-document.getElementById("nombre").addEventListener("click", ()=>{
-	const getNombre = async ()=>{
-		let peticion = await fetch("txt.txt");
-		let res = await peticion.json();
-		let div = document.createAttribute("DIV");
-		div.classList.add("nombre");
-		div.innerHTML = res.name;
-		document.body.appendChild(div);
-	}
-	getNombre();
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const getEdad = async ()=> {
-	let peticion = await fetch("txt.txt");
+const getNombre = async ()=> {
+	let peticion = await fetch ("txt.txt");
 	let res = await peticion.json();
 	let div = document.createElement("DIV");
-	div.classList.add("edad");
-	div.innerHTML = res.edad;
+	div.classList.add("nombre");
+	div.innerHTML= res.name;
 	document.body.appendChild(div);
 }
 
-document.getElementById('edad').addEventListener("click", getEdad);
+document.getElementById("nombre").addEventListener("click", getNombre);
+
+const getJob = async ()=> {
+	let peticion = await fetch("txt.txt");
+	let res = await peticion.json();
+	let div = document.createElement("DIV");
+	div.classList.add("job");
+	div.innerHTML = res.job;
+	document.body.appendChild(div);
+}
+
+document.getElementById('job').addEventListener("click", getJob);
 
 //Segundo ejecutamos con axio
 
