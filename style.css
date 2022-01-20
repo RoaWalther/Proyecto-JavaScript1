@@ -1,0 +1,42 @@
+body {
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+}
+div {
+	display: inline-block;
+	width: 90%;
+	background: #258;
+	padding: 20px;
+	text-align: center;
+}
+
+#nombre, #edad{
+	width: 40%;
+	font-size: 20px;
+	color: #fff;
+	background: #aaa;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+#nombre:hover, #edad:hover {
+	background: #444;
+}
+
+.nombre, .edad {
+	width: 40%;
+	background: black;
+	color: white;
+	font-size: 40px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.nombre{
+	color: red;
+}
+
+.edad {
+	color: blue;
+}

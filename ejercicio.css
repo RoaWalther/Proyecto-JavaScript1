@@ -1,0 +1,47 @@
+body {
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	margin: 0%;
+	padding: 0%;
+}
+.cont {
+	display: inline-block;
+	width: 90%;
+	height: 50px;
+	background: #258;
+	padding: 20px;
+	text-align: center;
+	margin:5px;
+}
+
+#infoApro{
+	width: 40%;
+	font-size: 20px;
+	color: #fff;
+	background: #888;
+	margin:  auto;
+	padding: 10px;
+}
+
+#infoApro:hover{
+	background: #666;
+}
+
+.resultados {
+	width: 80%;
+	background: black;
+	color: white;
+	font-size: 40px;
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+}
+
+.num-aprobado::before {
+	content: "Aprobados: ";
+}
+
+.num-desaprobado::before {
+	content: "Des-Aprobados: ";
+}

@@ -1,0 +1,9 @@
+
+
+{	
+	"name": "Pedro",
+	"job": "programador",
+	"edad": 32,
+    "id": "371",
+    "createdAt": "2022-01-19T15:13:33.885Z"
+}
